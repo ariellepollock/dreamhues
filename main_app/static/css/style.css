@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-us {
+    background-color: transparent;
+}
+
+.logo-margin {
+    margin-left: 5vmin;
+}
+
+.end-link-margin {
+    margin-right: 5vmin;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/***************************************** Home Page ****************************************/
+
+.navTitle {
+    font-family: 'Varela Round';
+    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+.title {
+    font-family: 'Sevillana';
+    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: -3vw;
+}
+
+.smallTitle {
+    margin-top: 10vh;
+    font-family: 'Sevillana';
+    text-shadow: 0 0 5px #1b03f5, 0 0 5px #fcfbfb;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 5vw;
+}
+
+.bottomTitle {
+    font-family: 'Sevillana';
+    text-shadow: 0 0 5px #1b03f5, 0 0 5px #fcfbfb;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 2vw;
+    padding-left: 2vw;
+}
+
+.start{
+    padding-left: 2vw;
+    margin-bottom: 1vw;
+}
+
+.startBtn{
+    margin-bottom: 4vw;
+}
+
+.bedcloud {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    max-width: 80vmin;
+    margin-top: -20vh;
+}
+
+#homeBackground {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1; 
+}
+
+.jumbotron{
+    margin-top: -4vw;
+}
+
+
+/***************************************** Login Page ****************************************/
+.loginTitle {
+    font-family: 'Varela Round';
+    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+    padding-left: 5vw;
+}
+
+.loginBtn {
+    font-family: 'Varela Round';
+    text-shadow: 0 0 5px #01000a, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+.loginForm {
+    padding: 5vw;
+}
+
+/***************************************** Signup Page ****************************************/
+.signupTitle {
+    font-family: 'Varela Round';
+    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+.signup {
+    padding-left: 5vw;
+}
+
+.signupForm {
+    padding: 5vw;
+}
+
+.helptext {
+    font-family: 'Varela Round';
+    text-shadow: 0 0 5px #ff0000, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+li {
+    font-family: 'Varela Round';
+    text-shadow: 0 0 5px #f50303, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-family: 'Varela Round';
+    text-shadow: 0 0 5px #020202, 0 0 5px #000000;
+    color: rgb(253, 253, 253);
+}
+/***************************************** About Page ****************************************/
+.aboutPage{
+    padding-left: 2vw;
+}
+
+/***************************************** Dream Detail Page ****************************************/
+.imageMsg{
+    font-family: 'Varela Round';
+    text-shadow: 0 0 5px #f50303, 0 0 5px #ff0404;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3vw;
+    padding-top: 7vw;
+}
+
+/***************************************** Add A Dream Page ****************************************/
+.addCard{
+    
+    background: none;
+}
+
+label{
+    font-family: 'Varela Round';
+    text-shadow: 0 0 5px #f70404, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 4vmin;
+    
+}
+
+.select-dropdown{
+    /* text-shadow: 0 0 5px #0026fd, 0 0 5px #1100fc; */
+    color: rgb(253, 253, 253);
+    font-family: 'Varela Round';
+}
+
+#id_date, #id_name, #id_about, #id_feeling, #id_dream_type{
+    color: white;
+    
+}
+
+
+/***************************************** Dream Index Page ****************************************/
+.amitaFont {
+font-family: 'Amita';
+font-weight: bold;
+text-shadow: 0 0 5px #1b03f5, 0 0 5px #000000;
+color: rgb(255, 255, 255);
+}
+
+.pageTitle {
+    text-align: center;
+    font-family: 'Varela Round';
+    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+.indexCreate{
+    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+    font-family: 'Varela Round';
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indexAdd{
+    text-shadow: 0 0 8px #fd0202, 0 0 8px #fa0000;
+    color: rgb(255, 255, 255);
+    font-family: 'Varela Round';
+    font-size: 2vw;
+    text-align: center;
+}
+
+.btn-us {
+    border-radius: 10px;
+    background-color: #dbe1ff;
+    color:#000000;
+}
+
+.btn-us:hover {
+    background-color: #0c084d;
+    color:#dbe1ff;
+}
+
+.btn-us-outline {
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    background-color: #0c084d;
+    color:white;
+}
+
+.btn-us-outline:hover {
+    background-color: #dbe1ff;
+    color:#0c084d;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 5vmin;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+}
+
+.card-title {
+    font-size: 4vmin;
+    text-align: center;
+}
+
+.index-date {
+    font-size: 2vmin;
+    text-align: center;
+}
+
+.index-type {
+    font-size: 2vmin;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.type-nightmare {
+    color: rgb(214, 29, 0);
+}
+
+.type-amazing {
+    color: rgb(255, 118, 234);
+}
+
+.type-weird {
+    color: rgb(0, 128, 128);
+}
+
+hr {
+    border-color:#070534;
+}
+
+/* styling for detail page */
+.image-banner {
+    width: 100vw;
+    height: 40vmin;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+
+.container-p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5vmin;
+}
+
+.btn-img {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 0.25rem 1.5rem;
+    margin: 0 0 0 1rem;
+    vertical-align: baseline;
+    background-color: #dbe1ff;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 100%;
+    line-height: normal;
+    cursor: pointer;
+    text-shadow: none;
+    transition: background-color 0.3s ease;
+}
+
+.on-date-of {
+    color:white;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.this-was {
+    color:#dbe1ff;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-top: -1.5rem;
+}
+
+.detail-center {
+    text-align: center;
+}
+
+.detail-about {
+    text-align: left;
+    max-width: 30vmin;
+    color:white;
+    font-size: 1.5rem;
+}
+
+.date-of-color {
+    color:rgb(83, 157, 254)
+}
+
+.btn-space {
+    margin: 40px 10px 80px 10px;
+}
+
+.delete-space-top {
+    margin-top: 30vmin;
+}
+
+/***************************************** Dream Form Page ****************************************/
+/* form styling */
+.dream-form {
+    color: white;
+}
+
+.form-field {
+    background-color: #ffffff;
+    color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
