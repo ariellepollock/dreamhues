@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<video playsinline preload="auto" autoplay muted loop 
+src="{% static 'public/videos/DetailPage.mp4' %}"
+type="video/mp4" id="homeBackground">
+</video>
+<div class="container detail-center">
+    <h1 class="pageTitle delete-space-top">FORGET DREAM</h1>
+    <h4 class="text on-date-of detail-center">Are you sure you want to forget <span class="text on-date-of">{{ object.name}} </span>?</h4>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="FORGET MY DREAM" class="btn waves-effect waves-light btn-small btn-us btn-space">
+        <a href="{% url 'detail' dream.id %}" class="btn waves-effect waves-light btn-small btn-us btn-space">Cancel</a>
+    </form>
+</div>
+
+{% endblock %}

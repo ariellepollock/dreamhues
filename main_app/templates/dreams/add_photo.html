@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="background-color: {{ palette.0 }};"></div>
+<div style="background-color: {{ palette.1 }};"></div>
+<div style="background-color: {{ palette.2 }};"></div>
+<div style="background-color: {{ palette.3 }};"></div>
+<div style="background-color: {{ palette.4 }};"></div>
+
+<a href="{% url 'detail' dream_id %}">Back to Dream Details</a>
+
+
+{% endblock %}

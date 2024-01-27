@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<video playsinline preload="auto" autoplay muted loop 
+src="{% static 'public/videos/DetailPage.mp4' %}"
+type="video/mp4" id="homeBackground">
+</video>
+
+<h1 class="pageTitle">DREAM LIBRARY</h1>
+
+<div class="container container-card">
+  {% for d in dreams %}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ d.name }}</span>
+      {% if d.dream_type == 'N' %}
+      <h6 class="index-type type-nightmare">What a nightmare.</h6>
+      {% elif d.dream_type == 'A' %}  
+      <h6 class="index-type type-amazing">It was amazing!</h6>
+      {% elif d.dream_type == 'W' %}  
+      <h6 class="index-type type-weird">That was weird...</h6>
+      {% endif %}
+      <h6 class="index-date">{{ d.date }}</h6>
+      <br>
+      <hr>
+      <br><a class="btn waves-effect waves-light btn-small btn-us-outline" href="{% url 'detail' d.id %}" role="button">VIEW DREAM DETAILS</a>
+      <!-- <a href="{% url 'detail' d.id %}" class="details-link">VIEW DREAM DETAILS</a> -->
+    </div>
+    <!-- <div class="details-link">
+      <a href="{% url 'detail' d.id %}" class="details-link">VIEW DREAM DETAILS</a>
+    </div> -->
+  </div>
+  {% empty %}
+  <p class="indexCreate">You haven't logged any dreams yet, might we suggest a nap?</p>
+  <a href="{% url 'dreams_create' %}" class="indexAdd">ADD A DREAM</a>
+  {% endfor %}
+</div>
+
+{% endblock %}

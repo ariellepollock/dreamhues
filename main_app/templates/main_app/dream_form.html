@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<video playsinline preload="auto" autoplay muted loop 
+src="{% static 'public/videos/DetailPage.mp4' %}"
+type="video/mp4" id="homeBackground">
+</video>
+
+{% if object %}
+    <h3 class="signupTitle signup">Edit {{ object.name }}</h3>
+{% else %}
+    <h3 class="signupTitle signup">Add a Dream</h3>
+{% endif %}
+<div class="input-field container">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+            <div class="input-field card-panel addCard">
+                {{ form.name.label_tag }}
+                {{ form.name }}
+            </div>
+
+            <div class="input-field card-panel addCard">
+                {{ form.date.label_tag }}
+                {{ form.date }}
+            </div>
+
+            <div class="input-field card-panel addCard">
+                {{ form.about.label_tag }}
+                {{ form.about }}
+            </div>
+
+            <div class="input-field card-panel addCard">
+                {{ form.feeling.label_tag }}
+                {{ form.feeling }}
+            </div>
+
+            <div class="input-field card-panel addCard">
+                {{ form.dream_type.label_tag }}
+                {{ form.dream_type }}
+            </div>
+        </table>
+        <button type="submit" class="btn waves-effect waves-light btn-small btn-us">LOG DREAM</button>
+    </form>
+</div>
+
+<script>
+const dateEl = document.getElementById('id_date')
+M.Datepicker.init(dateEl, {
+    format: 'yyyy-mm-dd',
+    defaultDate: new Date(),
+    setDefaultDate: true,
+    autoClose: true,
+})
+
+// Initialize Materialize select elements
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('select');
+    M.FormSelect.init(elems);
+});
+</script>
+{% endblock %}

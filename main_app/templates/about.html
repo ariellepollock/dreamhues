@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="aboutPage">
+  <video playsinline preload="auto" autoplay muted loop 
+  src="{% static 'public/videos/AboutPage.mp4' %}"
+  type="video/mp4" id="homeBackground">
+  </video>
+<h1 class="signupTitle">About Dreamhues</h1>
+<br>
+<h2 class="signupTitle">Add Vibrancy <large class="text-body-secondary">To Your Dreams</large></h2>
+
+<p>What if your dream-journal could reflect the dream itself?</p>
+<p>With Dreamhues, you can generate a dynamic color palette for each nights adventure.</p>
+<p>All you need to do is describe your dream, add a photo, then let us do the rest</p>
+<p>and watch as your dream entry dynamically changes to fit the dream.</p>
+<br>
+<h3 class="signupTitle">"Dream, dream, dream, dream, dream, dream"</h3>
+<medium class="text-body-secondary signupTitle" > - Taylor Lautner, 2005  </medium>
+</div>
+
+
+{% endblock %}

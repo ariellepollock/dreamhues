@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+<video playsinline preload="auto" autoplay muted loop 
+src="{% static 'public/videos/HomePage.mp4' %}"
+type="video/mp4" id="homeBackground">
+</video>
+
+
+<div class="jumbotron">
+  <p class="lead smallTitle">Hello, Dreamer,<br>Welcome to Dreamhues!</p>
+  <img src="{% static 'public/imgs/bedcloudnob.png' %}" class="bedcloud" alt="bed on a cloud">
+  {% if not user.is_authenticated %}
+  <p class="bottomTitle start">Let's get Started, sign in or sign up...</p>
+  <p class="lead start">
+    <a class="btn waves-effect waves-light btn-small btn-us startBtn" href="{% url 'login' %}" role="button">Login</a>
+    <a class="btn waves-effect waves-light btn-small btn-us startBtn" href="{% url 'signup' %}" role="button">New User</a>
+  </p>
+  {% endif %}
+</div>
+
+
+{% endblock %}
