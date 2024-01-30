@@ -79,18 +79,25 @@ font-style: normal; */
 }
 
 .homeDiv > h3 {
-    margin-top: 20vmin;
     color: white;
-    font-size: 2rem;
+    font-size: 5vmin;
+    padding: 6rem;
+    text-align: center;
     font-family: "katarine-web", sans-serif;
     font-weight: 600;
     font-style: normal;
+    margin-bottom: 0;
 }
 
 .homeDiv > p {
     text-align: center;
     padding: 10vmin;
+    margin-top: -20vmin;
     margin-bottom: 20vmin;
+}
+
+.extra-padding {
+    padding: 0 4rem;
 }
 
 /***************************************** Login Page ****************************************/
@@ -316,7 +323,7 @@ hr {
 .btn-us {
     border-radius: 10px;
     background-color: #dbe1ff;
-    color:#000000;
+    color:#05041d;
 }
 
 .btn-us:hover {
@@ -336,9 +343,24 @@ hr {
     background-color: transparent;
     color:white;
     text-decoration: underline;
+    box-shadow: none;
+    font-family: "katarine-web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn-us-underline:hover {
+    background-color: transparent;
+    color:white;
+    text-decoration: underline;
+    box-shadow: none;
+    font-family: "katarine-web", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .btn-us-outline:hover {
     background-color: #dbe1ff;
-    color:#0c084d;
+    border-color: #dbe1ff;
+    color:#05041d;
 }

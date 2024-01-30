@@ -14,7 +14,7 @@ type="video/mp4" id="homeBackground">
     {% if not user.is_authenticated %}
     <h3>Welcome to the app where dreams are made.</h3>
     <p>
-        <a class="btn waves-effect waves-light btn-small btn-us-outline" href="{% url 'signup' %}" role="button">Get started</a><br><br>
+        <a class="btn waves-effect waves-light btn-small btn-us-outline extra-padding" href="{% url 'signup' %}" role="button">Get started</a><br><br>
         <a class="btn waves-effect waves-light btn-small btn-us-underline" href="{% url 'login' %}" role="button">Already have an account?</a>
     </p>
     {% endif %}
