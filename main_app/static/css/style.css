@@ -37,60 +37,31 @@ main {
 
 /***************************************** Home Page ****************************************/
 
-.navTitle {
-    font-family: 'Varela Round';
-    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
-    color: rgb(255, 255, 255);
-}
-
-.title {
-    font-family: 'Sevillana';
-    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding-bottom: -3vw;
-}
-
-.smallTitle {
-    margin-top: 10vh;
-    font-family: 'Sevillana';
-    text-shadow: 0 0 5px #1b03f5, 0 0 5px #fcfbfb;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 5vw;
-}
-
-.bottomTitle {
-    font-family: 'Sevillana';
-    text-shadow: 0 0 5px #1b03f5, 0 0 5px #fcfbfb;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    font-size: 2vw;
-    padding-left: 2vw;
-}
-
-.start{
-    padding-left: 2vw;
-    margin-bottom: 1vw;
-}
-
-.startBtn{
-    margin-bottom: 4vw;
-}
-
-.bedcloud {
+/* .bedcloud {
     display: block;
     margin-right: auto;
     margin-left: auto;
     border: none;
     max-width: 80vmin;
     margin-top: -20vh;
-}
+} */
+
+/* font-family: "brevia", sans-serif;
+font-weight: 900;
+font-style: italic; */
+
+/* font-family: "anth", sans-serif;
+font-weight: 700;
+font-style: italic; */
+
+/* font-family: "katarine-web", sans-serif;
+font-weight: 600;
+font-style: normal; */
 
 #homeBackground {
     object-fit: cover;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     position: fixed;
     top:0;
     left: 0;
@@ -99,34 +70,35 @@ main {
     z-index: -1; 
 }
 
-.jumbotron{
-    margin-top: -4vw;
+.homeDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
+.homeDiv > h3 {
+    margin-top: 20vmin;
+    color: white;
+    font-size: 2rem;
+    font-family: "katarine-web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.homeDiv > p {
+    text-align: center;
+    padding: 10vmin;
+    margin-bottom: 20vmin;
+}
 
 /***************************************** Login Page ****************************************/
-.loginTitle {
-    font-family: 'Varela Round';
-    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
-    color: rgb(255, 255, 255);
-    padding-left: 5vw;
-}
 
-.loginBtn {
-    font-family: 'Varela Round';
-    text-shadow: 0 0 5px #01000a, 0 0 5px #ffffff;
-    color: rgb(255, 255, 255);
-}
-
-.loginForm {
-    padding: 5vw;
-}
 
 /***************************************** Signup Page ****************************************/
 .signupTitle {
-    font-family: 'Varela Round';
-    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
-    color: rgb(255, 255, 255);
+    color: rgb(154, 53, 53);
 }
 
 .signup {
@@ -138,20 +110,14 @@ main {
 }
 
 .helptext {
-    font-family: 'Varela Round';
-    text-shadow: 0 0 5px #ff0000, 0 0 5px #ffffff;
     color: rgb(255, 255, 255);
 }
 
 li {
-    font-family: 'Varela Round';
-    text-shadow: 0 0 5px #f50303, 0 0 5px #ffffff;
     color: rgb(255, 255, 255);
 }
 
 p {
-    font-family: 'Varela Round';
-    text-shadow: 0 0 5px #020202, 0 0 5px #000000;
     color: rgb(253, 253, 253);
 }
 /***************************************** About Page ****************************************/
@@ -161,8 +127,6 @@ p {
 
 /***************************************** Dream Detail Page ****************************************/
 .imageMsg{
-    font-family: 'Varela Round';
-    text-shadow: 0 0 5px #f50303, 0 0 5px #ff0404;
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 3vw;
@@ -171,13 +135,10 @@ p {
 
 /***************************************** Add A Dream Page ****************************************/
 .addCard{
-    
     background: none;
 }
 
 label{
-    font-family: 'Varela Round';
-    text-shadow: 0 0 5px #f70404, 0 0 5px #ffffff;
     color: rgb(255, 255, 255);
     font-size: 4vmin;
     
@@ -186,7 +147,6 @@ label{
 .select-dropdown{
     /* text-shadow: 0 0 5px #0026fd, 0 0 5px #1100fc; */
     color: rgb(253, 253, 253);
-    font-family: 'Varela Round';
 }
 
 #id_date, #id_name, #id_about, #id_feeling, #id_dream_type{
@@ -196,22 +156,14 @@ label{
 
 
 /***************************************** Dream Index Page ****************************************/
-.amitaFont {
-font-family: 'Amita';
-font-weight: bold;
-text-shadow: 0 0 5px #1b03f5, 0 0 5px #000000;
-color: rgb(255, 255, 255);
-}
 
 .pageTitle {
     text-align: center;
     font-family: 'Varela Round';
-    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
     color: rgb(255, 255, 255);
 }
 
 .indexCreate{
-    text-shadow: 0 0 5px #1b03f5, 0 0 5px #ffffff;
     color: rgb(255, 255, 255);
     font-family: 'Varela Round';
     margin-left: auto;
@@ -219,34 +171,10 @@ color: rgb(255, 255, 255);
 }
 
 .indexAdd{
-    text-shadow: 0 0 8px #fd0202, 0 0 8px #fa0000;
     color: rgb(255, 255, 255);
     font-family: 'Varela Round';
     font-size: 2vw;
     text-align: center;
-}
-
-.btn-us {
-    border-radius: 10px;
-    background-color: #dbe1ff;
-    color:#000000;
-}
-
-.btn-us:hover {
-    background-color: #0c084d;
-    color:#dbe1ff;
-}
-
-.btn-us-outline {
-    border-radius: 10px;
-    /* border: 1px solid white; */
-    background-color: #0c084d;
-    color:white;
-}
-
-.btn-us-outline:hover {
-    background-color: #dbe1ff;
-    color:#0c084d;
 }
 
 .container-card {
@@ -381,4 +309,36 @@ hr {
     color: #ffffff;
     border: 1px solid #ccc;
     padding: 10px;
+}
+
+
+/***************************************** Buttons ****************************************/
+.btn-us {
+    border-radius: 10px;
+    background-color: #dbe1ff;
+    color:#000000;
+}
+
+.btn-us:hover {
+    background-color: #0c084d;
+    color:#dbe1ff;
+}
+
+.btn-us-outline {
+    border-radius: 3rem;
+    /* border: 1px solid white; */
+    background-color: transparent;
+    color:white;
+    border: 0.1rem solid white;
+}
+
+.btn-us-underline {
+    background-color: transparent;
+    color:white;
+    text-decoration: underline;
+}
+
+.btn-us-outline:hover {
+    background-color: #dbe1ff;
+    color:#0c084d;
 }
