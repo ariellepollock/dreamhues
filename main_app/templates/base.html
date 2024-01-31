@@ -5,15 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dreamhues</title>
+    <title>somni</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Our Styling -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <!-- Brevia font -->
+    <!-- Brevia, Lorimer No 2 -->
     <link rel="stylesheet" href="https://use.typekit.net/sos7rmu.css">
-    <!-- Anth font -->
-    <link rel="stylesheet" href="https://use.typekit.net/sos7rmu.css">
-    <!-- Katarine font -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
@@ -22,15 +19,15 @@
         <div class="nav-wrapper">
           <ul>
             <li>
-              <a href="{% url 'home' %}" class="left brand-logo logo-margin navTitle">Dreamhues</a>
+              <a href="{% url 'home' %}" class="left brand-logo">somni</a>
             </li>
           </ul>
           <ul class="right">
-            <li><a href="{% url 'about' %}" class="navTitle">ABOUT</a></li>
+            <li><a href="{% url 'about' %}" class="nav-link">ABOUT</a></li>
             {% if user.is_authenticated %}
-            <li><a href="{% url 'index' %}" class="navTitle">MY DREAMS</a></li>
-            <li><a href="{% url 'dreams_create' %}" class="navTitle">ADD A DREAM</a></li>
-            <li><a href="{% url 'logout' %}" class="end-link-margin navTitle">LOG OUT</a></li>
+            <li><a href="{% url 'index' %}" class="nav-link">MY DREAMS</a></li>
+            <li><a href="{% url 'dreams_create' %}" class="nav-link">ADD A DREAM</a></li>
+            <li><a href="{% url 'logout' %}" class="nav-link">LOG OUT</a></li>
             {% endif %}
         </div>
       </nav>

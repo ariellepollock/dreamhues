@@ -2,18 +2,19 @@
 {% block content %}
 {% load static %}
 
-<video playsinline preload="auto" autoplay muted loop 
+<!-- <video playsinline preload="auto" autoplay muted loop 
   src="{% static 'public/videos/LoginVideo.mp4' %}"
   type="video/mp4" id="homeBackground">
-  </video>
-<h1 class="signupTitle signup">Sign Up</h1>
-
-<p class="red-text">{{ error_message }}</p>
-
-<form method="POST" action="{% url 'signup' %}" class="signupForm">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" class="btn signupTitle" value="Sign Up">
-</form>
+</video> -->
+<img src="{% static 'public/imgs/watercolor.png' %}" id="background">
+<div class="homeDiv signup-div">
+  <h3 class="signup-h3">Sign Up</h3>
+  <p class="red-text">{{ error_message }}</p>
+  <form method="POST" action="{% url 'signup' %}" class="signup-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <br><input type="submit" class="btn btn-primary btn-us-outline extra-padding" value="Sign Up">
+  </form>
+</div>
 
 {% endblock %}

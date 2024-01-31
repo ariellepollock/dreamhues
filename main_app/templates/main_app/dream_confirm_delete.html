@@ -2,10 +2,11 @@
 {% block content %}
 {% load static %}
 
-<video playsinline preload="auto" autoplay muted loop 
+<!-- <video playsinline preload="auto" autoplay muted loop 
 src="{% static 'public/videos/DetailPage.mp4' %}"
 type="video/mp4" id="homeBackground">
-</video>
+</video> -->
+<img src="{% static 'public/imgs/watercolor.png' %}" id="background">
 <div class="container detail-center">
     <h1 class="pageTitle delete-space-top">FORGET DREAM</h1>
     <h4 class="text on-date-of detail-center">Are you sure you want to forget <span class="text on-date-of">{{ object.name}} </span>?</h4>

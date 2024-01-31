@@ -3,19 +3,21 @@
 
 {% load static %}
 
-
-<video playsinline preload="auto" autoplay muted loop 
+<!-- <video playsinline preload="auto" autoplay muted loop 
 src="{% static 'public/videos/LoginVideo.mp4' %}"
 type="video/mp4" id="homeBackground">
-</video>
+</video> -->
 
-<h1 class="loginTitle">Welcome back, <br> Please log In...</h1>
- 
-<form method="POST" action="{% url 'login' %}" class="signupTitle loginForm">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="hidden" name="next" value="{{ next }}" >
-  <button type="submit" class="btn btn-primary btn-lg loginBtn">Log In</button>
-</form>
+<img src="{% static 'public/imgs/watercolor.png' %}" id="background">
+<div class="homeDiv">
+  <h3>Welcome back, please log in.</h3>
+
+  <form method="POST" action="{% url 'login' %}" class="login-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="hidden" name="next" value="{{ next }}" >
+    <button type="submit" class="btn btn-primary btn-us-outline extra-padding">Log In</button>
+  </form>
+</div>
 
 {% endblock %}

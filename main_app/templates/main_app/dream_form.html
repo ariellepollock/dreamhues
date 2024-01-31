@@ -2,11 +2,11 @@
 {% block content %}
 {% load static %}
 
-<video playsinline preload="auto" autoplay muted loop 
+<!-- <video playsinline preload="auto" autoplay muted loop 
 src="{% static 'public/videos/DetailPage.mp4' %}"
 type="video/mp4" id="homeBackground">
-</video>
-
+</video> -->
+<img src="{% static 'public/imgs/watercolor.png' %}" id="background">
 {% if object %}
     <h3 class="signupTitle signup">Edit {{ object.name }}</h3>
 {% else %}

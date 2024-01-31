@@ -2,7 +2,7 @@
 {% block content %}
 {% load static %}
 
-<style>
+<!-- <style>
   {% if palette %}
     .image-banner {
       filter: brightness(0.8);
@@ -24,14 +24,14 @@
         border-color: {{ palette.4 }};
     }
   {% endif %}
-</style>
+</style> -->
 
 
-<video playsinline preload="auto" autoplay muted loop 
+<!-- <video playsinline preload="auto" autoplay muted loop 
 src="{% static 'public/videos/DetailVideo.mp4' %}"
 type="video/mp4" id="homeBackground">
-</video>
-
+</video> -->
+<img src="{% static 'public/imgs/watercolor.png' %}" id="background">
 <!-- Banner Image -->
 {% if dream.photo_set.last %}
   <div class="image-banner" style="background-image: url('{{ dream.photo_set.last.url }}');"></div>

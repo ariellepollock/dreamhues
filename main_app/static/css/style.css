@@ -23,16 +23,35 @@ body {
     background-color: transparent;
 }
 
-.logo-margin {
-    margin-left: 5vmin;
+.nav-link {
+    color: white;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.25rem;
 }
 
-.end-link-margin {
-    margin-right: 5vmin;
-}
+/* .logo-margin {
+    margin-left: 5vmin;
+} */
+
+/* .end-link-margin {
+    margin-right: 2rem;
+} */
 
 main {
     flex: 1 0 auto;
+}
+
+.brand-logo {
+    font-family: "brevia", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    margin-left: 2rem;
+}
+
+.right {
+    margin-right: 2rem;
 }
 
 /***************************************** Home Page ****************************************/
@@ -58,7 +77,7 @@ font-style: italic; */
 font-weight: 600;
 font-style: normal; */
 
-#homeBackground {
+#background {
     object-fit: cover;
     width: 100vw;
     height: auto;
@@ -74,25 +93,29 @@ font-style: normal; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: sp */
     height: 100vh;
 }
 
 .homeDiv > h3 {
     color: white;
-    font-size: 5vmin;
-    padding: 6rem;
+    /* padding: 6rem; */
     text-align: center;
-    font-family: "katarine-web", sans-serif;
-    font-weight: 600;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
     font-style: normal;
-    margin-bottom: 0;
+    font-size: 2.75rem;
+    margin: 15vmin 7vmin 0 7vmin;
+}
+
+.brevia {
+    font-family: "brevia", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.6rem;
 }
 
 .homeDiv > p {
-    text-align: center;
-    padding: 10vmin;
-    margin-top: -20vmin;
     margin-bottom: 20vmin;
 }
 
@@ -100,21 +123,45 @@ font-style: normal; */
     padding: 0 4rem;
 }
 
+.center-home {
+    text-align: center;
+}
+
+.welcome {
+    padding-top: 20vmin;
+}
+
+.home-out {
+    padding: 10rem;
+}
+
+.home-in {
+    padding: 4rem;
+}
+
 /***************************************** Login Page ****************************************/
 
 
 /***************************************** Signup Page ****************************************/
-.signupTitle {
+.signup-form {
+    margin: -20vmin 20vmin;
+}
+
+.signup-h3 {
+    margin-bottom: -20vmin;
+}
+
+/* .signupTitle {
     color: rgb(154, 53, 53);
-}
+} */
 
-.signup {
+/* .signup {
     padding-left: 5vw;
-}
+} */
 
-.signupForm {
+/* .signupForm {
     padding: 5vw;
-}
+} */
 
 .helptext {
     color: rgb(255, 255, 255);
@@ -128,8 +175,41 @@ p {
     color: rgb(253, 253, 253);
 }
 /***************************************** About Page ****************************************/
-.aboutPage{
-    padding-left: 2vw;
+.brevia-sm {
+    font-family: "brevia", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3.5rem; 
+}
+
+/* .homeDiv > h4 {
+    color: white;
+    padding: 6rem;
+    text-align: center;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    margin-top: -20vmin;
+} */
+
+.justify-about {
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: -15vmin 8vmin 20vmin 8vmin;
+}
+
+.bold-em {
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.underline-about {
+    text-decoration: underline;
 }
 
 /***************************************** Dream Detail Page ****************************************/
@@ -156,7 +236,7 @@ label{
     color: rgb(253, 253, 253);
 }
 
-#id_date, #id_name, #id_about, #id_feeling, #id_dream_type{
+#id_date, #id_name, #id_about, #id_feeling, #id_dream_type {
     color: white;
     
 }
@@ -227,11 +307,11 @@ label{
     color: rgb(0, 128, 128);
 }
 
-hr {
+/* hr {
     border-color:#070534;
-}
+} */
 
-/* styling for detail page */
+/************************************ styling for detail page ************************************/
 .image-banner {
     width: 100vw;
     height: 40vmin;
@@ -333,10 +413,23 @@ hr {
 
 .btn-us-outline {
     border-radius: 3rem;
-    /* border: 1px solid white; */
     background-color: transparent;
     color:white;
     border: 0.1rem solid white;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+.btn-us-outline:hover {
+    background-color: #dbe1ff;
+    border-color: #dbe1ff;
+    color:#05041d;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.25rem;
 }
 
 .btn-us-underline {
@@ -344,9 +437,10 @@ hr {
     color:white;
     text-decoration: underline;
     box-shadow: none;
-    font-family: "katarine-web", sans-serif;
-    font-weight: 400;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
     font-style: normal;
+    font-size: 1.25rem;
 }
 
 .btn-us-underline:hover {
@@ -354,13 +448,9 @@ hr {
     color:white;
     text-decoration: underline;
     box-shadow: none;
-    font-family: "katarine-web", sans-serif;
-    font-weight: 400;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
     font-style: italic;
+    font-size: 1.25rem;
 }
 
-.btn-us-outline:hover {
-    background-color: #dbe1ff;
-    border-color: #dbe1ff;
-    color:#05041d;
-}

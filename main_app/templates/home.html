@@ -7,16 +7,21 @@
 src="{% static 'public/videos/HomePage.mp4' %}"
 type="video/mp4" id="homeBackground">
 </video> -->
-<img src="{% static 'public/imgs/watercolor.png' %}" id="homeBackground">
+<img src="{% static 'public/imgs/watercolor.png' %}" id="background">
 
 <div class="homeDiv">
     <!-- <img src="{% static 'public/imgs/bedcloudnob.png' %}" class="bedcloud" alt="bed on a cloud"> -->
+    <h3 class="welcome">Welcome to the app where <span class="brevia">dreams</span> are made.</h3>
+    {% if user.is_authenticated %}
+        <p class="center-home home-in">
+            <a class="btn waves-effect waves-light btn-small btn-us-outline extra-padding" href="{% url 'dreams_create' %}" role="button">Add a Dream</a>
+        </p>
+    {% endif %}
     {% if not user.is_authenticated %}
-    <h3>Welcome to the app where dreams are made.</h3>
-    <p>
-        <a class="btn waves-effect waves-light btn-small btn-us-outline extra-padding" href="{% url 'signup' %}" role="button">Get started</a><br><br>
-        <a class="btn waves-effect waves-light btn-small btn-us-underline" href="{% url 'login' %}" role="button">Already have an account?</a>
-    </p>
+        <p class="center-home home-out">
+            <a class="btn waves-effect waves-light btn-small btn-us-outline extra-padding" href="{% url 'signup' %}" role="button">Get started</a><br><br>
+            <a class="btn waves-effect waves-light btn-small btn-us-underline" href="{% url 'login' %}" role="button">Already have an account?</a>
+        </p>
     {% endif %}
 </div>
 
