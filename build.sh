@@ -12,3 +12,5 @@ pip3 install dj-database-url
 pip3 install django-environ
 
 pip3 install psycopg2-binary
+
+pip3 install whitenoise
