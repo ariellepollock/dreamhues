@@ -215,14 +215,6 @@ p {
     text-decoration: underline;
 }
 
-/***************************************** Dream Detail Page ****************************************/
-.imageMsg{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 3vw;
-    padding-top: 7vw;
-}
-
 /***************************************** Add A Dream Page ****************************************/
 .addCard{
     background: none;
@@ -327,7 +319,8 @@ label{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 2vmin;
+    background-color: #00000052;
 }
 
 .container-p {
@@ -339,37 +332,63 @@ label{
 
 .btn-img {
     box-sizing: border-box;
-    border: none;
+    border: 0.1rem solid #dbe1ff;
     outline: none;
     padding: 0.25rem 1.5rem;
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 1vmin;
     vertical-align: baseline;
     background-color: #dbe1ff;
     color: #000000;
-    border-radius: 10px;
-    font-size: 100%;
+    border-radius: 4rem;
+    font-size: 1rem;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     line-height: normal;
     cursor: pointer;
     text-shadow: none;
     transition: background-color 0.3s ease;
 }
 
+.btn-img:hover {
+    background-color: transparent;
+    color:white;
+    border: 0.1rem solid white;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .on-date-of {
     color:white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: left;
     margin-top: 3rem;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .this-was {
     color:#dbe1ff;
     text-align: center;
     font-size: 1.75rem;
-    margin-top: -1.5rem;
+    margin-top: 0;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .detail-center {
     text-align: center;
+}
+
+.background-tone {
+    background-color: #05041da3;
+    border-radius: 3rem;
+    padding: 7vmin;
+    padding-top: 2vmin;
+    margin-top: 4vmin;
 }
 
 .detail-about {
@@ -384,11 +403,22 @@ label{
 }
 
 .btn-space {
-    margin: 40px 10px 80px 10px;
+    margin: 3vmin 1vmin 8vmin 1vmin;
 }
 
 .delete-space-top {
     margin-top: 30vmin;
+}
+
+.imageMsg{
+    color: #00000e;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 16vmin;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
 }
 
 /***************************************** Dream Form Page ****************************************/
