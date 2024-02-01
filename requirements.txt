@@ -45,7 +45,7 @@ requests==2.31.0
 requests-toolbelt==1.0.0
 s3transfer==0.10.0
 shellingham==1.5.4
-six @ file:///AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-110/six-1.15.0-py2.py3-none-any.whl
+# six @ file:///AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-110/six-1.15.0-py2.py3-none-any.whl
 sqlparse==0.4.4
 tomli==2.0.1
 tomlkit==0.12.3
