@@ -19,16 +19,12 @@ body {
     flex-direction: column;
 }
 
-.navbar-us {
-    background-color: transparent;
-}
-
 .nav-link {
     color: white;
     font-family: "lorimer-no-2", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
 
 /* .logo-margin {
@@ -52,6 +48,10 @@ main {
 
 .right {
     margin-right: 2rem;
+}
+
+.navbar-us {
+    background-color: transparent;
 }
 
 /***************************************** Home Page ****************************************/
@@ -526,3 +526,4 @@ label{
     margin-left: -9vmin;
     margin-top: 2vmin;
 }
+
