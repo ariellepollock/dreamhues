@@ -16,3 +16,5 @@ pip3 install psycopg2-binary
 pip3 install whitenoise
 
 pip3 install boto3
+
+pip3 install requests
