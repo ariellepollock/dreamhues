@@ -18,3 +18,5 @@ pip3 install whitenoise
 pip3 install boto3
 
 pip3 install requests
+
+pip3 install python-dotenv
