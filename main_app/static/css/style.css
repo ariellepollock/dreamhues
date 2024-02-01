@@ -199,7 +199,10 @@ p {
     font-family: "lorimer-no-2", sans-serif;
     font-weight: 300;
     font-style: normal;
-    margin: -15vmin 8vmin 20vmin 8vmin;
+    margin: 3vmin 20vmin;
+    background-color: #05041da3;
+    padding: 4vmin;
+    border-radius: 3rem;
 }
 
 .bold-em {
@@ -454,3 +457,26 @@ label{
     font-size: 1.25rem;
 }
 
+/******************* side nav *******************/
+.nav-wrapper .sidenav-trigger {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.brand-logo {
+    margin-left: -35vmin; /* Adjust this value as needed */
+}
+
+.sidenav {
+    background-color: #05041d;
+}
+
+.sidenav a {
+    color: white !important; /* Ensuring text is solid white */
+    text-decoration: none !important; /* Optional: Removes underline from links */
+}
+
+.sidenav-overlay {
+    display: none !important;
+}

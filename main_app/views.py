@@ -110,14 +110,14 @@ def add_photo(request, dream_id):
           Photo.objects.create(url=url, dream_id=dream_id)
           # print(f"URL: {url}")
 
-          # Imgix API Palette Generation
-          palette = get_imgix_palette(url)
-          print(f"Imgix API Response: {palette}")
+          # # Imgix API Palette Generation
+          # palette = get_imgix_palette(url)
+          # print(f"Imgix API Response: {palette}")
 
-          if palette:
-                return render(request, 'dreams/add_photo.html', {'dream_id': dream_id, 'url': url, 'palette': palette})
-          else:
-                print('Imgix API error: Palette is None')
+          # if palette:
+          #       return render(request, 'dreams/add_photo.html', {'dream_id': dream_id, 'url': url, 'palette': palette})
+          # else:
+          #       print('Imgix API error: Palette is None')
 
         except Exception as e:
             print('woah nelly! an error occurred uploading your file')

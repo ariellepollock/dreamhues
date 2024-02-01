@@ -7,30 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>somni</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Our Styling -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <!-- Brevia, Lorimer No 2 -->
     <link rel="stylesheet" href="https://use.typekit.net/sos7rmu.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
     <header class="navbar-fixed">
-      <nav class="navbar-us">
-        <div class="nav-wrapper">
-          <ul>
-            <li>
-              <a href="{% url 'home' %}" class="left brand-logo">somni</a>
-            </li>
+      <nav class="nav-wrapper navbar-us">
+          <!-- Brand Logo -->
+          <a href="{% url 'home' %}" class="brand-logo">somni</a>
+          <!-- Navbar Links (for larger screens) -->
+          <ul class="right hide-on-med-and-down">
+              <li><a href="{% url 'about' %}">ABOUT</a></li>
+              {% if user.is_authenticated %}
+                  <li><a href="{% url 'index' %}">MY DREAMS</a></li>
+                  <li><a href="{% url 'dreams_create' %}">ADD A DREAM</a></li>
+                  <li><a href="{% url 'logout' %}">LOG OUT</a></li>
+              {% endif %}
           </ul>
-          <ul class="right">
-            <li><a href="{% url 'about' %}" class="nav-link">ABOUT</a></li>
-            {% if user.is_authenticated %}
-            <li><a href="{% url 'index' %}" class="nav-link">MY DREAMS</a></li>
-            <li><a href="{% url 'dreams_create' %}" class="nav-link">ADD A DREAM</a></li>
-            <li><a href="{% url 'logout' %}" class="nav-link">LOG OUT</a></li>
-            {% endif %}
-        </div>
+          <!-- Sidenav Trigger -->
+          <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
       </nav>
+      <!-- Sidenav Structure (for smaller screens) -->
+      <ul id="slide-out" class="sidenav">
+          <li><a href="{% url 'about' %}">ABOUT</a></li>
+          {% if user.is_authenticated %}
+              <li><a href="{% url 'index' %}">MY DREAMS</a></li>
+              <li><a href="{% url 'dreams_create' %}">ADD A DREAM</a></li>
+              <li><a href="{% url 'logout' %}">LOG OUT</a></li>
+          {% endif %}
+      </ul>
     </header>
     <main class="container-fluid">
 
@@ -39,5 +47,12 @@
       {% endblock %}
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, { edge: 'right' });
+      });
+    </script>
   </body>
 </html>
