@@ -15,8 +15,8 @@ import dj_database_url
 import environ
 import os
 
-environ.Env()
-environ.Env.read_env()
+# environ.Env()
+# environ.Env.read_env()
 
 env = environ.Env(
     # set casting, default value
