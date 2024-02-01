@@ -9,4 +9,4 @@ pip3 install gunicorn
 
 pip3 install dj-database-url
 
-pip3 install environ
+pip3 install django-environ
