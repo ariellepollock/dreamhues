@@ -8,9 +8,9 @@ type="video/mp4" id="homeBackground">
 </video> -->
 <img src="{% static 'public/imgs/watercolor.png' %}" id="background">
 {% if object %}
-    <h3 class="signupTitle signup">Edit {{ object.name }}</h3>
+    <h3 class="pageTitle signup">Edit {{ object.name }}</h3>
 {% else %}
-    <h3 class="signupTitle signup">Add a Dream</h3>
+    <h3 class="pageTitle signup">DOCUMENT YOUR DREAM</h3>
 {% endif %}
 <div class="input-field container">
     <form action="" method="POST">
@@ -40,8 +40,8 @@ type="video/mp4" id="homeBackground">
                 {{ form.dream_type.label_tag }}
                 {{ form.dream_type }}
             </div>
-        </table>
-        <button type="submit" class="btn waves-effect waves-light btn-small btn-us">LOG DREAM</button>
+        </table><br>
+        <button type="submit" class="btn waves-effect waves-light btn-small btn-us-outline">LOG DREAM</button>
     </form>
 </div>
 

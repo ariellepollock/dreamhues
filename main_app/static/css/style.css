@@ -249,8 +249,11 @@ label{
 
 .pageTitle {
     text-align: center;
-    font-family: 'Varela Round';
-    color: rgb(255, 255, 255);
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.75rem;
+    color: white;
 }
 
 .indexCreate{
@@ -464,19 +467,32 @@ label{
     top: 0;
 }
 
-.brand-logo {
-    margin-left: -35vmin; /* Adjust this value as needed */
-}
+/* .brand-logo {
+    margin-left: -35vmin;
+} */
 
 .sidenav {
     background-color: #05041d;
+    font-family: "lorimer-no-2", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .sidenav a {
     color: white !important; /* Ensuring text is solid white */
     text-decoration: none !important; /* Optional: Removes underline from links */
+    font-size: 1.75rem !important;
 }
 
 .sidenav-overlay {
     display: none !important;
+}
+
+.top-pad-side-nav {
+    margin-top: 10vmin;
+}
+
+.sidenav-close {
+    margin-left: -9vmin;
+    margin-top: 2vmin;
 }
