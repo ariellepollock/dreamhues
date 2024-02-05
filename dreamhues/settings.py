@@ -15,13 +15,12 @@ import dj_database_url
 import environ
 import os
 
-# environ.Env()
-# environ.Env.read_env()
 
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False)
 )
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,7 +31,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = env.str("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
@@ -99,6 +98,7 @@ DATABASES = {
         'PASSWORD': env('NEON_PASSWORD'),
         'HOST': env('NEON_HOST'),
         'PORT': env('NEON_PORT'),
+        'OPTIONS': {'sslmode': 'require'},
     }
 }
 
@@ -131,13 +131,15 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_L10N = True
+
 USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 if not DEBUG:
     # Tell Django to copy statics to the `staticfiles` directory
