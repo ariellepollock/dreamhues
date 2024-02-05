@@ -1,4 +1,4 @@
-pip3 install --upgrade pip3
+pip3 install --upgrade pip
 pip3 install --force-reinstall -U setuptools
 
 pip3 install boto3
