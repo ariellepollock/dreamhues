@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'dreamhues.wsgi.application'
 
 DATABASES = {
     'default': {
-        'default': dj_database_url.config(default='postgresql://postgres:postgres@localhost:5432/dreamhues', conn_max_age=600),
+        'default': dj_database_url.config(default='postgresql://postgres:postgres@localhost:5432/neondb', conn_max_age=600),
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': env('NEON_NAME'),
         'USER': env('NEON_USER'),
