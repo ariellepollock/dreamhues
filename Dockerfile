@@ -31,20 +31,6 @@ RUN set -ex && \
 COPY . /code
 
 ENV SECRET_KEY "vyYOZb3sRjh8Equ6NuyB7gWCG3vGNa8I3rBjB3NnzZbyofn3fi"
-#  bring in below from env file:
-ENV DATABASE_URL "postgresql://ariellepollock:i8EGjOxJ0zcN@ep-tiny-wind-a51hibae.us-east-2.aws.neon.tech/neondb?sslmode=require"
-
-ENV NEON_NAME "neondb"
-ENV NEON_USER "ariellepollock"
-ENV NEON_PASSWORD "i8EGjOxJ0zcN"
-ENV NEON_HOST "ep-tiny-wind-a51hibae.us-east-2.aws.neon.tech"
-ENV NEON_PORT "5432"
-
-ENV AWS_ACCESS_KEY_ID "AKIAVRUVSYRWFZ2QI5O2"
-ENV AWS_SECRET_ACCESS_KEY "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"
-ENV S3_BASE_URL "https://s3.us-east-2.amazonaws.com/"
-ENV S3_BUCKET "somni-photos-s3"
-#  end of env imports
 
 RUN python manage.py collectstatic --noinput
 
