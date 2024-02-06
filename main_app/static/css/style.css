@@ -216,25 +216,24 @@ p {
 }
 
 /***************************************** Add A Dream Page ****************************************/
-.addCard{
+/* .addCard{
     background: none;
-}
+} */
 
-label{
+/* label{
     color: rgb(255, 255, 255);
     font-size: 4vmin;
     
 }
 
-.select-dropdown{
+.select-dropdown {
     /* text-shadow: 0 0 5px #0026fd, 0 0 5px #1100fc; */
-    color: rgb(253, 253, 253);
-}
+    /* color: rgb(253, 253, 253);
+} */
 
-#id_date, #id_name, #id_about, #id_feeling, #id_dream_type {
+/* #id_date, #id_name, #id_about, #id_feeling, #id_dream_type {
     color: white;
-    
-}
+/* } */ 
 
 
 /***************************************** Dream Index Page ****************************************/
@@ -423,7 +422,7 @@ label{
 
 /***************************************** Dream Form Page ****************************************/
 /* form styling */
-.dream-form {
+/* .dream-form {
     color: white;
 }
 
@@ -432,7 +431,7 @@ label{
     color: #ffffff;
     border: 1px solid #ccc;
     padding: 10px;
-}
+} */
 
 
 /***************************************** Buttons ****************************************/
@@ -526,4 +525,3 @@ label{
     margin-left: -9vmin;
     margin-top: 2vmin;
 }
-

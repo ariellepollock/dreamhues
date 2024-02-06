@@ -82,12 +82,12 @@ class Photo(models.Model):
   def __str__(self):
     return f"dream_id: {self.dream_id} @{self.url}"
 
-class Palette(models.Model):
-    color1 = models.CharField(max_length=7)
-    color2 = models.CharField(max_length=7)
-    color3 = models.CharField(max_length=7)
-    color4 = models.CharField(max_length=7)
-    color5 = models.CharField(max_length=7)
+# class Palette(models.Model):
+#     color1 = models.CharField(max_length=7)
+#     color2 = models.CharField(max_length=7)
+#     color3 = models.CharField(max_length=7)
+#     color4 = models.CharField(max_length=7)
+#     color5 = models.CharField(max_length=7)
 
 class DreamListView(LoginRequiredMixin, ListView):
   model = Dream

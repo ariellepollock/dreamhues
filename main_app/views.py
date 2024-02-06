@@ -1,5 +1,5 @@
 import os
-IMGIX_KEY = os.environ.get('IMGIX_KEY')
+# IMGIX_KEY = os.environ.get('IMGIX_KEY')
 from typing import Any
 import uuid
 import boto3
@@ -14,7 +14,7 @@ from django.views.generic.detail import DetailView
 
 from . models import Dream, DreamForm, Photo
 
-from . utils import get_imgix_palette 
+# from . utils import get_imgix_palette 
 
 import requests
 import json
@@ -40,11 +40,11 @@ def dreams_index(request):
 #GET - Detail
 def dreams_detail(request, dream_id):
   dream = Dream.objects.get(id=dream_id)
-  palette = get_imgix_palette(dream.photo_set.last().url) if dream.photo_set.last() else None
-  return render(request, 'dreams/detail.html', { 'dream': dream, 'palette': palette})
+  # palette = get_imgix_palette(dream.photo_set.last().url) if dream.photo_set.last() else None
+  return render(request, 'dreams/detail.html', { 'dream': dream}) 
+# , 'palette': palette
 
 # - CreateView, for dream form
-
 class DreamCreate(CreateView):
   model = Dream
   form_class = DreamForm
@@ -79,22 +79,22 @@ class DreamDelete(DeleteView):
   success_url = '/dreams'
 
 # Get - random palette
-def get_imgix_palette(image_url):
-    imgix_url = 'https://api.imgix.com/v2/palette'
-    payload = {
-        'url': image_url,
-        'count': 5,
-    }
-    headers = {
-      'Content-Type': 'application/json',
-      'Authorization': f'Bearer {IMGIX_KEY}', 
-    }
-    response = requests.post(imgix_url, json=payload, headers=headers)
+# def get_imgix_palette(image_url):
+#     imgix_url = 'https://api.imgix.com/v2/palette'
+#     payload = {
+#         'url': image_url,
+#         'count': 5,
+#     }
+#     headers = {
+#       'Content-Type': 'application/json',
+#       'Authorization': f'Bearer {IMGIX_KEY}', 
+#     }
+#     response = requests.post(imgix_url, json=payload, headers=headers)
 
-    if response.status_code == 200:
-        return response.json()['data']['palette']
-    else:
-        return None
+#     if response.status_code == 200:
+#         return response.json()['data']['palette']
+#     else:
+#         return None
 
 # add_photo
 def add_photo(request, dream_id):
