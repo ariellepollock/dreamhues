@@ -34,7 +34,7 @@ ENV SECRET_KEY "vyYOZb3sRjh8Equ6NuyB7gWCG3vGNa8I3rBjB3NnzZbyofn3fi"
 #  bring in below from env file:
 ENV DATABASE_URL "postgresql://ariellepollock:i8EGjOxJ0zcN@ep-tiny-wind-a51hibae.us-east-2.aws.neon.tech/neondb?sslmode=require"
 
-ENV ENV NEON_NAME "neondb"
+ENV NEON_NAME "neondb"
 ENV NEON_USER "ariellepollock"
 ENV NEON_PASSWORD "i8EGjOxJ0zcN"
 ENV NEON_HOST "ep-tiny-wind-a51hibae.us-east-2.aws.neon.tech"
