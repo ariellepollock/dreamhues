@@ -1,5 +1,6 @@
 # Somni
-### An app derived from Dreamhues
+#### An app derived from Dreamhues 
+#### https://github.com/ariellepollock/Project3-DreamHues/tree/arielle
 
 ## Overview
 The app where dreams are made. Somni transforms the way you record and analyze your dreams. It's not just a dream journal; it's a tool for unlocking the secrets of your subconscious mind. 
